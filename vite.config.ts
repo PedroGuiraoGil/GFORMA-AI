@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
+      base: '/GFORMA-AI/', // <-- ESTA LÍNEA ES LA QUE ELIMINA EL ERROR 404
       server: {
         port: 3000,
         host: '0.0.0.0',
